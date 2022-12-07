@@ -6,8 +6,9 @@ const ProfilePage = () => {
 
   return (
     <>
-      <h1></h1>
-      <p>Welcome,{auth.user.username} </p>
+      <h1>Perfil</h1>
+      <p>Welcome, {auth.user.userName} </p>
+      {console.log(auth)}
     </>
   )
 }

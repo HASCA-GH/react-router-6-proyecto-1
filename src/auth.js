@@ -7,13 +7,14 @@ const AuthProvider = ({children}) => {
     const navigate = useNavigate()
     const [user, setUser] = React.useState(null)
 
-    const login = ({username})=> {
-        setUser({username})
+    const login = ({userName})=> {
+        setUser({userName})
         navigate('/profile')
     }
 
     const logout = ()=> {
         setUser(null)
+        navigate('/')
     }
 
     const auth = {user, login, logout}

@@ -3,7 +3,7 @@ import { useAuth } from './auth'
 
 const LoginPage = () => {
     const auth = useAuth()
-    const [userName, SetUserName] = React.useState('')
+    const [userName, setUserName] = React.useState('')
 
     const login = (e)=>{
         e.preventDefault()
@@ -18,7 +18,7 @@ const LoginPage = () => {
             <input 
                 type="text" 
                 value={userName}
-                onChange={(e)=> SetUserName(e.target.value)}
+                onChange={(e)=> setUserName(e.target.value)}
             />
             <button type="submit">Entrar</button>
         </form>
